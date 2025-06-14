@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>siddharth's portfolio</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Siddharth Singh</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+           
+           
+    </nav>
+       
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-picture">
+                <img src="profile-pic (15).png" alt="Siddharth Singh">
+            </div>
+            <h1 class="hero-title">SIDDHARTH SINGH</h1>
+            <p class="subtitle">Software Engineer | Frontend Developer | UI/UX Designer | Tech Leader</p>
+            <p class="description">
+                Passionate about solving real-world problems through innovative technology solutions. 
+                Currently leading tech initiatives at GDSC and building impactful software that makes a difference.
+            </p>
+            <div class="hero-buttons">
+                <a href="https://drive.google.com/file/d/1Mbf6HyyNdx_eejDf4pRtPQeOZF57_VDj/view?usp=sharing" target="_blank" class="btn btn-primary" onclick="downloadResume()">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </a>
+            </div>
+                <div class="social-links">
+                    <a href="https://github.com/sidhu212" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/siddharth-singh-4b8416262/" class="social-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    
+                </div>
+            
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="scroll-offset">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Gyan Ganga College of Technology</h3>
+                <p><strong>Operational Head</strong> of Google Developer Student Clubs</p>
+                <p>
+                    I'm a passionate B.Tech Computer Science student at Gyan Ganga College of Technology, 
+                    driven by the desire to create innovative solutions that solve real-world problems. 
+                    As the Operational Head of GDSC at GGCT, I lead 50+ developers and organize impactful tech events. 
+                    Proficient in Python, JavaScript, C++, AWS, and modern web technologies. 
+                    Finalist at Smart India Hackathon 2024. Contributor to open source, mentor, and AI enthusiast.
+                </p>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Team Members Led</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">8+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Years of Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">SIH 2024</span>
+                    <span class="stat-label">Finalist</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Skills Section -->
+    <section id="skills" class="scroll-offset">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-globe"></i> Web Technologies</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Firebase</span>
+                    <span class="skill-tag">WordPress</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Android Studio</span>
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Machine Learning</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Leadership</span>
+                    <span class="skill-tag">Teamwork</span>
+                    <span class="skill-tag">Communication</span>
+                    <span class="skill-tag">Innovation</span>
+                    <span class="skill-tag">Problem Solving</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="scroll-offset">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">VEIP - Education Platform</h3>
+                    <p class="project-description">
+                        Smart India Hackathon 2024 finalist project – LMS + freelance platform. Designed in Figma, built with React.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">UI/UX Design</span>
+                        <span class="tech-tag">LMS</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/sidhu212/VEIP---Education-Platform" target="_blank" class="btn btn-primary btn-small">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://vission-landing-page.vercel.app/" target="_blank" class="btn btn-secondary btn-small">
+                            <i class="fas fa-external-link-alt"></i> Prototype
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">Voice Assistant "JARVIS"</h3>
+                    <p class="project-description">
+                        Python voice assistant with system automation, NLP, and command execution
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive Design</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/sidhu212/virtual-assistant" class="btn btn-primary btn-small">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://sidhu212.github.io/virtual-assistant/" target="_blank" class="btn btn-secondary btn-small">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">E-Commerce Website</h3>
+                    <p class="project-description">
+                        Responsive e-commerce site with user authentication, shopping cart, and secure payments
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive Design</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/sidhu212/e-commerce-website" target="_blank" class="btn btn-primary btn-small">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" class="btn btn-secondary btn-small">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="scroll-offset">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2023 – Present</div>
+                <h3 class="timeline-title">Operational Head @ GDSC GGCT</h3>
+                <p class="timeline-description">
+                    Leading 50+ developers, organizing events and hackathons, fostering innovation and learning.
+                </p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2024</div>
+                <h3 class="timeline-title">AWS AI-ML Virtual Intern</h3>
+                <p class="timeline-description">
+                    Worked on EC2, Lambda, SageMaker, and more. Built scalable AI/ML projects.
+                </p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2024</div>
+                <h3 class="timeline-title">Team Co-Lead – SIH Finalist</h3>
+                <p class="timeline-description">
+                    Designed UI/UX and led frontend development of VEIP platform.
+                </p>
+            </div>
+        </div>
+        
+
+       <!-- Replace the existing Achievements section with this enhanced version -->
+<section id="achievements" class="section">
+    <div class="container">
+        <h2 class="section-title">Achievements</h2>
+        <div class="achievement-card">
+            <div class="achievement-header">
+                <div class="achievement-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div>
+                    <h3 class="achievement-title">SIH 2024 Finalist</h3>
+                    <p class="achievement-subtitle">Smart India Hackathon 2024</p>
+                </div>
+            </div>
+            
+            <div class="achievement-gallery">
+                <div class="gallery-item">
+                    <img src="1.jpg" 
+                         alt="SIH 2024 Achievement" 
+                         class="gallery-image"
+                         onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item">
+                    <img src="2.jpg" 
+                         alt="SIH 2024 Team" 
+                         class="gallery-image"
+                         onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item">
+                    <img src="3.jpg" 
+                         alt="SIH 2024 Team" 
+                         class="gallery-image"
+                         onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item">
+                    <img src="4.jpg" 
+                         alt="SIH 2024 Team" 
+                         class="gallery-image"
+                         onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item">
+                    <img src="6.jpg" 
+                         alt="SIH 2024 Team" 
+                         class="gallery-image"
+                         onclick="openModal(this.src)">
+                </div>
+                <div class="gallery-item">
+                    <img src="5.jpg" 
+                         alt="SIH 2024 Team" 
+                         class="gallery-image"
+                         onclick="openModal(this.src)">
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+            <p class="achievement-description">
+                Selected as finalist in Smart India Hackathon 2024, competing among thousands of teams nationwide 
+                with innovative education platform solution.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Image Modal -->
+<div id="imageModal" class="modal">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+
+
+
+
+        
+      <!-- Certifications Section -->
+    <section id="certifications" class="scroll-offset">
+        <h2 class="section-title">CERTIFICATIONS</h2>
+        <div class="certifications-grid">
+    <div class="cert-card">
+        <div class="cert-info">
+            <h4>CCNA: Enterprise Networking, Security, and Automation</h4>
+            <div class="cert-issuer">Cisco Networking Academy</div>
+            <div class="cert-date">May 31, 2025</div>
+        </div>
+        <a href="https://drive.google.com/file/d/1Ny3TPQa0Lqkej97lE6KDt99ZxnV38e2U/view?usp=sharing" class="cert-view-btn" target="_blank">View Certificate</a>
+    </div>
+    <div class="cert-card">
+        <div class="cert-info">
+            <h4>CCNA: Switching, Routing, and Wireless Essentials</h4>
+            <div class="cert-issuer">Cisco Networking Academy</div>
+            <div class="cert-date">May 31, 2025</div>
+        </div>
+        <a href="https://drive.google.com/file/d/1NUcDWrEY-vk9AqHNlRwOWrK7RAG5xSox/view?usp=sharing" class="cert-view-btn" target="_blank">View Certificate</a>
+    </div>
+    <div class="cert-card">
+        <div class="cert-info">
+            <h4>CCNA: Introduction to Networks</h4>
+            <div class="cert-issuer">Cisco Networking Academy</div>
+            <div class="cert-date">May 31, 2025</div>
+        </div>
+        <a href="https://drive.google.com/file/d/10lF0qQRUS9DdTM2BmlVTMf5eaNLLd7gz/view?usp=sharing" class="cert-view-btn" target="_blank">View Certificate</a>
+    </div>
+    <div class="cert-card">
+        <div class="cert-info">
+            <h4>Introduction to Cybersecurity</h4>
+            <div class="cert-issuer">Gyan Ganga College of Technology / Cisco</div>
+            <div class="cert-date">May 31, 2025</div>
+        </div>
+        <a href="https://drive.google.com/file/d/1pjInhX1aj1E-tIWD6OWCljAMG6mF-6Tr/view?usp=sharing" class="cert-view-btn" target="_blank">View Certificate</a>
+    </div>
+    <div class="cert-card">
+        <div class="cert-info">
+            <h4>Python Essentials 2</h4>
+            <div class="cert-issuer">Cisco Networking Academy</div>
+            <div class="cert-date">May 30, 2025</div>
+        </div>
+        <a href="https://drive.google.com/file/d/1_v9-f-_DVlPVVrcm-ghS9uZBS0xnJHZO/view?usp=sharing" class="cert-view-btn" target="_blank">View Certificate</a>
+    </div>
+    <div class="cert-card">
+        <div class="cert-info">
+            <h4>Python Essentials 1</h4>
+            <div class="cert-issuer">Cisco Networking Academy</div>
+            <div class="cert-date">March 24, 2025</div>
+        </div>
+        <a href="https://drive.google.com/file/d/1hcGqH_SkosA1Z8TGPLj8MOgd4tUOU5hP/view?usp=sharing" class="cert-view-btn" target="_blank">View Certificate</a>
+    </div>
+    <div class="cert-card">
+        <div class="cert-info">
+            <h4>AI for Beginners</h4>
+            <div class="cert-issuer">HP LIFE - HP Foundation</div>
+            <div class="cert-date">February 21, 2025</div>
+        </div>
+        <a href="https://drive.google.com/file/d/1jyQ_k654NQ05NI1MllhB-sFL-f76tvea/view?usp=sharing" class="cert-view-btn" target="_blank">View Certificate</a>
+    </div>
+    <div class="cert-card">
+        <div class="cert-info">
+            <h4>Software Engineering Job Simulation</h4>
+            <div class="cert-issuer">Accenture</div>
+            <div class="cert-date">February 15, 2025</div>
+        </div>
+        <a href="https://drive.google.com/file/d/1LkrLaHU8dPGNQGDIkCr3V7KcWY_M6c_w/view?usp=sharing" class="cert-view-btn" target="_blank">View Certificate</a>
+    </div>
+    <div class="cert-card">
+        <div class="cert-info">
+            <h4>AI-ML Virtual Internship</h4>
+            <div class="cert-issuer">AWS Academy</div>
+            <div class="cert-date">April 2025</div>
+        </div>
+        <a href="https://drive.google.com/file/d/1XdU7XnfUX_phCQqa88u8m32P7nSwMxIv/view?usp=sharing" class="cert-view-btn" target="_blank">View Certificate</a>
+    </div>
+    <div class="cert-card">
+        <div class="cert-info">
+            <h4>Cybersecurity Essentials</h4>
+            <div class="cert-issuer">Cisco Networking Academy</div>
+            <div class="cert-date">August 2024</div>
+        </div>
+        <a href="https://drive.google.com/file/d/1hX-Gx2VSj7-7qvtqtFZ_zxzdmthtxQ55/view?usp=sharing" class="cert-view-btn" target="_blank">View Certificate</a>
+    </div>
+    <div class="cert-card">
+        <div class="cert-info">
+            <h4>Introduction to Packet Tracer</h4>
+            <div class="cert-issuer">Cisco Networking Academy</div>
+            <div class="cert-date">August 2024</div>
+        </div>
+        <a href="https://drive.google.com/file/d/1nXeE48I5s2f9gNWhvzDX_PsZIRVed6GG/view?usp=sharing" class="cert-view-btn" target="_blank">View Certificate</a>
+    </div>
+    <div class="cert-card">
+        <div class="cert-info">
+            <h4>AI/ML Specialization</h4>
+            <div class="cert-issuer">Google For Developers</div>
+            <div class="cert-date">September 2024</div>
+        </div>
+        <a href="https://drive.google.com/file/d/10hzyD00ZLmVvyNc7dfmoAyacRiVkQ5Jz/view?usp=sharing" class="cert-view-btn" target="_blank">View Certificate</a>
+    </div>
+    <div class="cert-card">
+        <div class="cert-info">
+            <h4>C++ Programming Essentials</h4>
+            <div class="cert-issuer">Cisco Networking Academy</div>
+            <div class="cert-date">January 2024</div>
+        </div>
+        <a href="https://drive.google.com/file/d/1Zt372wjttK-K51uWurEQJK4-L-wgn3gl/view?usp=sharing" class="cert-view-btn" target="_blank">View Certificate</a>
+    </div>
+    <div class="cert-card">
+        <div class="cert-info">
+            <h4>C Programming Essentials</h4>
+            <div class="cert-issuer">Cisco Networking Academy</div>
+            <div class="cert-date">April 2023</div>
+        </div>
+        <a href="https://drive.google.com/file/d/1fpJQ0B0ZYHSMqKhgiDY9SaD8ziXLcGK-/view?usp=sharing" class="cert-view-btn" target="_blank">View Certificate</a>
+    </div>
+</div>
+
+            <!-- Education Section -->
+<section id="education" class="section scroll-offset">
+    <h2 class="section-title">Education</h2>
+    
+    <div class="education-timeline">
+        <!-- College Education -->
+        <div class="education-card">
+            <div class="education-header">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-title">
+                    <h3 class="education-degree">Bachelor of Technology - Computer Science Engineering</h3>
+                    <div class="education-school">Gyan Ganga College of Technology, Jabalpur</div>
+                </div>
+            </div>
+            
+            <div class="education-content">
+                <div class="education-details">
+                    <span class="detail-item"><i class="fas fa-calendar"></i> Expected 2026</span>
+                    <span class="detail-item"><i class="fas fa-chart-line"></i> CGPA: 7.34</span>
+                </div>
+                
+                <div class="education-description">
+                    <p>Pursuing comprehensive education in computer science with focus on:</p>
+                    <ul class="education-highlights">
+                        <li><i class="fas fa-code"></i> Software Engineering</li>
+                        <li><i class="fas fa-project-diagram"></i> Data Structures & Algorithms</li>
+                        <li><i class="fas fa-laptop-code"></i> Modern Technology Stacks</li>
+                    </ul>
+                </div>
+                
+                <div class="education-footer">
+                    <span class="activity-tag"><i class="fas fa-code"></i> Coding Competitions</span>
+                    <span class="activity-tag"><i class="fas fa-users"></i> Technical Events</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- School Education -->
+        <div class="education-card">
+            <div class="education-header">
+                <div class="education-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="education-title">
+                    <h3 class="education-degree">Senior Secondary Education</h3>
+                    <div class="education-school">Little Kingdom Sr. Sec. School</div>
+                </div>
+            </div>
+            
+            <div class="education-content">
+                <div class="education-details">
+                    <span class="detail-item"><i class="fas fa-calendar"></i> 2022</span>
+                    <span class="detail-item"><i class="fas fa-flask"></i> Science Stream</span>
+                </div>
+                
+                <div class="education-description">
+                    <p>Completed higher secondary education with focus on:</p>
+                    <ul class="education-highlights">
+                        <li><i class="fas fa-atom"></i> Physics</li>
+                        <li><i class="fas fa-vial"></i> Chemistry</li>
+                        <li><i class="fas fa-square-root-alt"></i> Mathematics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Replace your contact form with this version -->
+ <section id="contact" class="scroll-offset">
+    <h2 class="section-title">Get In Touch</h2>
+<form id="contactForm" class="contact-form">
+    <div class="form-header">
+        <div class="form-icon">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+        <h3>Send Me a Message</h3>
+    </div>
+    
+    <input type="hidden" name="to_email" value="sidhusingh7898thakur@gmail.com">
+    
+    <div class="form-group">
+        <label for="name">Your Name</label>
+        <div class="input-with-icon">
+            <div class="input-icon">
+                <i class="fas fa-user"></i>
+            </div>
+            <input type="text" id="name" name="from_name" required placeholder="Enter your name">
+        </div>
+        <div class="error-message" id="nameError"></div>
+    </div>
+    
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <div class="input-with-icon">
+            <div class="input-icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <input type="email" id="email" name="from_email" required placeholder="Enter your email">
+        </div>
+        <div class="error-message" id="emailError"></div>
+    </div>
+    
+    <div class="form-group">
+        <label for="subject">Subject</label>
+        <div class="input-with-icon">
+            <div class="input-icon">
+                <i class="fas fa-tag"></i>
+            </div>
+            <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+        </div>
+        <div class="error-message" id="subjectError"></div>
+    </div>
+    
+    <div class="form-group">
+        <label for="message">Your Message</label>
+        <div class="input-with-icon">
+            <div class="input-icon">
+                <i class="fas fa-pencil-alt"></i>
+            </div>
+            <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+        </div>
+        <div class="error-message" id="messageError"></div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary" id="submitBtn">
+        <i class="fas fa-paper-plane"></i> Send Message
+    </button>
+    
+    <div id="formSuccess" class="success-message"></div>
+</form>
+</section>
+
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Siddharth Singh. All rights reserved. Built with passion and innovation.</p>
+        </div>
+        <div class="contact-icon">
+                            
+                        </div>
+                        <div>
+                            <h4><i class="fas fa-envelope"></i>  Email</h4>
+                            <p>siddharthsingh0259@gmail.com</p>
+                        </div>
+    </footer>
+
+
+    
+</body>
+</html>
